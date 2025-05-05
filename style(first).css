@@ -1,0 +1,107 @@
+/* This was my original */
+
+/* Make the brand/logo use the serif heading font */
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;   /* match the weight you loaded */
+  }
+  
+  /* Make all navbar links use the sans body font */
+  .navbar-nav .nav-link {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+  }
+  
+  /* (Optional) If you want the phone button to match too: */
+  .navbar .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+
+  .carousel-item {
+    position: relative;            /* so our overlay sits on top */
+  }
+  
+  /* the dimming layer */
+  .carousel-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);   /* 50% black */
+    z-index: 1;
+  }
+  
+  /* center your caption in the middle of the slide */
+  .carousel-caption {
+    position: absolute;
+    top: 50%;                      /* vertically center */
+    left: 50%;                     /* horizontally center */
+    transform: translate(-50%, -50%);
+    z-index: 2;                    /* above the overlay */
+    text-align: center;
+    color: white;
+  }
+  
+  /* optional: tweak your font sizes */
+  .carousel-caption small {
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-size: 0.8rem;
+  }
+  .carousel-caption h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+  }
+  /* custom.css (load this _after_ bootstrap.css) */
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;       /* turn it on */
+    text-decoration-thickness: 2px;    /* tweak thickness if you like */
+    /* optionally: color the line explicitly */
+    /* text-decoration-color: #fff; */
+  }
+  .navbar {
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Transparent by default */
+  .navbar.bg-transparent {
+    background-color: transparent !important;
+  }
+  
+  /* Solid black once we add .scrolled */
+  .navbar.scrolled {
+    background-color: #000 !important;
+  }
+  .header-item {
+    position: relative;            /* so our overlay sits on top */
+  }
+  .header-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);   /* 50% black */
+    z-index: 1;
+  }
+  /* center your caption in the middle of the slide */
+  .header-caption {
+    position: absolute;
+    top: 50%;                      /* vertically center */
+    left: 50%;                     /* horizontally center */
+    transform: translate(-50%, -50%);
+    z-index: 2;                    /* above the overlay */
+    text-align: center;
+    color: white;
+  }
+  
+  /* optional: tweak your font sizes */
+  .header-caption small {
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-size: 0.8rem;
+  }
+  .header-caption h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+  }

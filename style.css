@@ -1,0 +1,104 @@
+/* style.css */
+:root {
+    --gold: #d4af37;
+    --dark: #222;
+    --light: #f8f9fa;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  /* NAVBAR: transparent → dark */
+  #mainNav {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  #mainNav.scrolled {
+    background-color: var(--dark) !important;
+  }
+  
+/* HERO-CAROUSEL: same 80vh height + overlay + captions */
+#carouselExampleSlidesOnly .carousel-item,
+#carouselExampleSlidesOnly .carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+  
+  /* optional: dark overlay */
+  #carouselExampleSlidesOnly::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    pointer-events: none;
+  }
+  #carouselExampleSlidesOnly .carousel-item img {
+    filter: brightness(40%);  /* 40% brightness = 60% darker */
+
+  }
+  
+  /* re‐use your caption styles if desired */
+  #carouselExampleSlidesOnly .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+  }
+  
+  /* SERVICE CARDS */
+  .service-card {
+    border: none;
+    transition: transform .3s ease, box-shadow .3s ease;
+  }
+  .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  .text-gold { color: var(--gold); }
+  
+  /* ABOUT SECTION */
+  #about h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-top: 1rem;
+  }
+  
+  /* FOOTER */
+  footer {
+    font-size: .9rem;
+  }
+  footer a:hover {
+    color: var(--gold);
+  }
+  /* HERO */
+  .btn-gold {
+    background-color: var(--gold);
+    color: #222;
+    font-weight: 600;
+    border-radius: 50px;
+  }
+  .btn-gold:hover {
+    background-color: #b08b2f;
+  }
+  /* make carousel a positioning context */
+#carouselExampleSlidesOnly {
+    position: relative;
+  }
+  
+  /* position the hero absolutely over the slides */
+  #carouselExampleSlidesOnly .hero {
+    position: absolute;
+    inset: 0;              /* top:0; right:0; bottom:0; left:0 */
+    z-index: 2;            /* above the overlay & images */
+    pointer-events: none;  /* allow clicks to pass through */
+    color: #fff;
+  }
+  
+  /* but still let the button be clickable */
+  #carouselExampleSlidesOnly .hero .btn {
+    pointer-events: auto;
+  }
+  
