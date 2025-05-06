@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,22 +5,18 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Nails Spa</title>
 
-  <!-- Bootstrap CSS -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
-  <!-- FontAwesome -->
   <link
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     rel="stylesheet"
   />
-  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap"
     rel="stylesheet"
   />
-  <!-- Your custom styles -->
   <link href="style.css" rel="stylesheet" />
 </head>
 <body>
@@ -39,10 +34,19 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto gap-3 pe-3>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <ul class="navbar-nav ms-auto align-items-center gap-3 pe-3">
+          <li class="nav-item dropdown">
+            <button class="btn btn-transparent dropdown-toggle text-light border border-0" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark bg-transparent">
+              <li><a class="dropdown-item text-light" href="Nails.html">Nails</a></li>
+              <li><a class="dropdown-item text-light" href="Waxing.html">Waxing</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link text-light" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="Booking.html">Book</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -62,21 +66,17 @@
     <div class="container-fluid text-center">
       <h1 class="display-4">Luxury Nail Care</h1>
       <p class="lead mb-4">Experience the ultimate in pampering and style</p>
-      <a href="#services" class="btn btn-gold btn-lg">Our Services</a>
+      <a href="#about" class="btn btn-gold btn-lg ">About Us</a>
     </div>
   </header>
 </div>
 
-  <!-- SERVICES -->
-  <section id="services" class="py-5">
-    <div class="container text-center mb-4">
-      <h2 class="mb-3">Our Premium Services</h2>
-      <p class="text-muted">Fall in love with high-precision nail artistry</p>
-    </div>
+  <!-- Socials -->
+  <section id="socials" class="py-5">
     <div class="container">
       <div class="row row-cols-3 g-2">
         <div class="col">
-            <a href="https://www.instagram.com/" class="link-underline-light">
+            <a href="Giftcard.html" class="link-underline-light">
           <div class="card service-card h-100">
             <div class="card-body">
               <i class="fa-solid fa-gift fa-3x mb-3 text-gold"></i>
@@ -117,7 +117,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 mb-4 mb-lg-0">
-          <img src="nails2.jpg" alt="Nail Art" class="img-fluid rounded shadow" />
+          <img src="salon.webp" alt="Nail Art" class="img-fluid rounded shadow" />
         </div>
         <div class="col-lg-6">
           <h2>- About Us</h2>
@@ -133,13 +133,14 @@
 
   <!-- FOOTER -->
   <footer class="bg-dark text-light py-5">
-    <div class="container">
+    <div class="container pe-5">
       <div class="row">
         <div class="col-md-4 mb-3">
           <h5>Nails Spa</h5>
           <p class="small">© 2025 Nails Spa. All rights reserved.</p>
         </div>
-        <div class="col-md-4 mb-3 text-center">
+        <div class="col-md-4 mb-3">
+          <h5>Follow Us</h5>
           <a href="https://instagram.com" class="text-light mx-2">
             <i class="fab fa-instagram fa-lg"></i>
           </a>
@@ -147,25 +148,53 @@
             <i class="fab fa-facebook fa-lg"></i>
           </a>
         </div>
+        <div class="col-md-4 mb-3">
+          <h5>Hours of Operation</h5>
+          <p class="small">
+            <strong>Mon - Fri:</strong> 9:00 A.M. - 7:30 P.M.
+            <br>
+            <strong>Sun:</strong> 10:00 A.M. - 6:00 P.M.
+            <br>
+            Last walk-ins 30 mins before close.
+          </p>
+        </div>
         <div class="col-md-4">
           <h6>Quick Links</h6>
           <ul class="list-unstyled small">
-            <li><a href="#" class="text-light">Home</a></li>
-            <li><a href="#services" class="text-light">Services</a></li>
+            <li><a href="Home.html" class="text-light">Home</a></li>
             <li><a href="#about" class="text-light">About</a></li>
-            <li><a href="#contact" class="text-light">Contact</a></li>
+            <li><a href="contact.html" class="text-light">Contact</a></li>
           </ul>
         </div>
+        <div class="col-md-4">
+          <h6>Location</h6>
+          <p>12344 NE 35th st,
+            <br>
+            Boca Raton, FL 33045
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h5>Call Us</h5>
+        <p>
+          <a href="tel:+15612345678" class="text-decoration-none text-light">
+            <i class="fa-solid fa-phone me-2"></i>(561) 234-5678
+          </a>
+        </p>
+
+        <h5>Email</h5>
+        <p>
+          <a href="mailto:info@nailsspa.com" class="text-decoration-none text-light">
+            <i class="fa-solid fa-envelope me-2"></i>info@nailsspa.com
+          </a>
       </div>
     </div>
   </footer>
 
-  <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const nav = document.getElementById('mainNav');
-      // debug: make sure we found it
       console.log('mainNav element:', nav);
   
       function onScroll() {
@@ -175,10 +204,7 @@
           nav.classList.remove('scrolled');
         }
       }
-  
-      // run on load in case we start mid-page
       onScroll();
-      // listen for scrolls
       window.addEventListener('scroll', onScroll);
     });
   </script>

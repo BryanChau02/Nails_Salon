@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nails Spa</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet"
+  />
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent py-3" id="mainNav">
+    <div class="container-fluid p-3">
+      <a class="navbar-brand ps-4" href="Home.html">Nails Spa</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-center gap-3 pe-3">
+          <li class="nav-item dropdown">
+            <button class="btn btn-transparent dropdown-toggle text-light border border-0" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark bg-transparent">
+              <li><a class="dropdown-item text-light" href="Nails.html">Nails</a></li>
+              <li><a class="dropdown-item text-light" href="Waxing.html">Waxing</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link text-light" href="Home.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="Booking.html">Book</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- HERO CAROUSEL -->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active ratio py-5" style="--bs-aspect-ratio: 25%;">
+        <img src="nails5.jpg" class="d-block img-fluid" alt="1">
+      </div>
+      <div class="carousel-item ratio py-5" style="--bs-aspect-ratio: 25%;"">
+        <img src="pedicures.jpg" class="d-block img-fluid" alt="2">
+      </div>
+    </div>
+  <header class="hero d-flex align-items-center justify-content-center text-center">
+    <div class="container-fluid text-center">
+      <h1 class="display-4">Nails</h1>
+      <p class="lead mb-4">Enjoy Our Assortment of Nail Services</p>
+      <div class="container-fluid text-center p-3">
+      <a href="#Manicures" class="btn btn-gold btn-lg ">Manicures</a>
+      <a href="#Pedicures" class="btn btn-gold btn-lg">Pedicures</a>
+      <a href="#Dips" class="btn btn-gold btn-lg">Dips</a>
+      <a href="#Acrylics" class="btn btn-gold btn-lg">Acrylics</a>
+      </div>
+    </div>
+  </header>
+</div>
+
+  <!-- Manicures -->
+  <section id="Manicures" class="py-5">
+    <div class="container d-flex align-items-center">
+      <div class="container">
+        <h3 class="mb-4">Manicures</h3>
+        <img src="nails6.jpg" class="img-fluid rounded shadow" id="mani">
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-hand-sparkles fa-3x text-gold"></i>
+              <h5 class="card-title">Basic Manicure</h5>
+              <p class="card-text">Nail shaping, cuticle care and polish of your choice. A clean, classic look in 30 minutes.
+                <br>
+                <br>
+                <span class="">$30.00</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col ">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-droplet fa-3x text-gold"></i>
+              <h5 class="card-title">Gel Manicure</h5>
+              <p class="card-text">Long-lasting color with high-gloss finish. Cures under LED light for a chip-resistant shine.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-paintbrush fa-3x text-gold"></i>
+              <h5 class="card-title">French Manicure</h5>
+              <p class="card-text">Timeless clear base with crisp white tips. Perfectly precise and polished in 50 minutes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pedicures -->
+  <section id="Pedicures" class="py-5 bg-light">
+    <div class="container d-flex align-items-center">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-shoe-prints fa-3x text-gold"></i>
+              <h5 class="card-title">Basic Pedicure</h5>
+              <p class="card-text">Warm foot soak, nail trimming, gentle exfoliation and polish. A relaxing 45-minute treat.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-spa fa-3x text-gold"></i>
+              <h5 class="card-title">Spa Pedicure</h5>
+              <p class="card-text">Includes sugar scrub, mud mask and soothing massage. Softens and refreshes tired feet.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-gem fa-3x text-gold"></i>
+              <h5 class="card-title">Deluxe Pedicure</h5>
+              <p class="card-text">Callus removal, paraffin dip and extended massage. The ultimate indulgence in 75 minutes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h3 class="mb-4">Pedicures</h3>
+        <img src="pedicures.jpg" class="img-fluid rounded shadow" id="mani">
+      </div>
+    </div>
+  </section>
+
+  <!-- Dips -->
+  <section id="Dips" class="py-5">
+    <div class="container d-flex align-items-center">
+      <div class="container">
+        <h3 class="mb-4">Dip Powder</h3>
+        <img src="dip.webp" class="img-fluid rounded shadow" id="mani">
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-tint fa-3x text-gold"></i>
+              <h5 class="card-title">Classic Dip</h5>
+              <p class="card-text">Durable, chip-resistant powder finish. No UV light needed—lasting wear in 40 minutes.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col ">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-adjust fa-3x text-gold"></i>
+              <h5 class="card-title">Multichrome Dip</h5>
+              <p class="card-text">Shimmering, color-shifting effect that changes in every light. Eye-catching and unique.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-star fa-3x text-gold"></i>
+              <h5 class="card-title">Glitter Dip</h5>
+              <p class="card-text">High-sparkle finish—perfect for special occasions or a bit of everyday glam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Acrylics -->
+  <section id="Acrylics" class="py-5 bg-light">
+    <div class="container d-flex align-items-center">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-square-plus fa-3x text-gold"></i>
+              <h5 class="card-title">Full Set Acrylics</h5>
+              <p class="card-text">Custom length and shape built with premium acrylic—durable and beautiful.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col ">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-fill-drip fa-3x text-gold"></i>
+              <h5 class="card-title">Acrylic Fill</h5>
+              <p class="card-text">Maintenance for your existing acrylics—fills out regrowth and smooths all edges.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-palette fa-3x text-gold"></i>
+              <h5 class="card-title">Acrylic Nail Art</h5>
+              <p class="card-text">Hand-painted designs, gems or 3D accents—let your nails be your canvas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h3 class="mb-4">Acrylic Nails</h3>
+        <img src="acrylic.jpg" class="img-fluid rounded shadow" id="mani">
+      </div>
+    </div>
+  </section>
+
+  <!-- Add Ons -->
+  <section id="AddOns" class="py-5">
+    <div class="container">
+      <h3 class="mb-4">Add-Ons</h3>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-hand-holding-droplet fa-3x mb-3 text-gold"></i>
+              <h5 class="card-title">Paraffin Wax Treatment</h5>
+              <p class="card-text">
+                Deeply moisturizes skin, soothes joints, and leaves hands or feet silky smooth.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-cut fa-3x mb-3 text-gold"></i>
+              <h5 class="card-title">Cuticle Care</h5>
+              <p class="card-text">
+                Nourishing oils and expert trim to keep your cuticles healthy and neat.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-spa fa-3x mb-3 text-gold"></i>
+              <h5 class="card-title">Sugar Scrub Exfoliation</h5>
+              <p class="card-text">
+                Gentle exfoliation to remove dead skin cells and restore a radiant glow.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-gem fa-3x mb-3 text-gold"></i>
+              <h5 class="card-title">Gel Top Coat Add-On</h5>
+              <p class="card-text">
+                Ultra-shiny, chip-resistant finish you can layer over any polish.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light py-5">
+    <div class="container pe-5">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>Nails Spa</h5>
+          <p class="small">© 2025 Nails Spa. All rights reserved.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Follow Us</h5>
+          <a href="https://instagram.com" class="text-light mx-2">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+          <a href="https://facebook.com" class="text-light mx-2">
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Hours of Operation</h5>
+          <p class="small">
+            <strong>Mon - Fri:</strong> 9:00 A.M. - 7:30 P.M.
+            <br>
+            <strong>Sun:</strong> 10:00 A.M. - 6:00 P.M.
+            <br>
+            Last walk-ins 30 mins before close.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled small">
+            <li><a href="Home.html" class="text-light">Home</a></li>
+            <li><a href="Home.html#about" class="text-light">About</a></li>
+            <li><a href="contact.html" class="text-light">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>Location</h6>
+          <p>12344 NE 35th st,
+            <br>
+            Boca Raton, FL 33045
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h5>Call Us</h5>
+          <p>
+            <a href="tel:+15612345678" class="text-decoration-none text-light">
+              <i class="fa-solid fa-phone me-2"></i>(561) 234-5678
+            </a>
+          </p>
+
+          <h5>Email</h5>
+          <p>
+            <a href="mailto:info@nailsspa.com" class="text-decoration-none text-light">
+              <i class="fa-solid fa-envelope me-2"></i>info@nailsspa.com
+            </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const nav = document.getElementById('mainNav');
+      console.log('mainNav element:', nav);
+
+      function onScroll() {
+        if (window.scrollY > 50) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
+      }
+      onScroll();
+      window.addEventListener('scroll', onScroll);
+    });
+  </script>
+</body>
+</html>

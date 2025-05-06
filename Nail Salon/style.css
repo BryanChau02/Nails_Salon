@@ -19,6 +19,19 @@
   #mainNav.scrolled {
     background-color: var(--dark) !important;
   }
+  #mainNav.scrolled .dropdown-menu {
+    background-color: var(--light) !important; /* or #f8f9fa */
+    border: 1px solid rgba(0,0,0,0.1) !important;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.15) !important;
+  }
+  
+  /* and invert the link colors so they remain legible */
+  #mainNav.scrolled .dropdown-item {
+    color: var(--dark) !important;  /* e.g. #222 */
+  }
+  #mainNav.scrolled .dropdown-item:hover {
+    background-color: rgba(0,0,0,0.05) !important;
+  }
   
 /* HERO-CAROUSEL: same 80vh height + overlay + captions */
 #carouselExampleSlidesOnly .carousel-item,
@@ -101,4 +114,12 @@
   #carouselExampleSlidesOnly .hero .btn {
     pointer-events: auto;
   }
-  
+  #mani #pedi #dip #acrylic{
+    width: 500px;
+  }
+  html {
+    /* leave space at the top equal to your fixed nav’s height */
+    scroll-padding-top: 70px;  
+    /* optional: make your in-page links scroll smoothly */
+    scroll-behavior: smooth;
+  }

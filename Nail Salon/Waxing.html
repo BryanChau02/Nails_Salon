@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nails Spa</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet"
+  />
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent py-3" id="mainNav">
+    <div class="container-fluid p-3">
+      <a class="navbar-brand ps-4" href="Home.html">Nails Spa</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-center gap-3 pe-3">
+          <li class="nav-item dropdown">
+            <button class="btn btn-transparent dropdown-toggle text-light border border-0" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark bg-transparent">
+              <li><a class="dropdown-item text-light" href="Nails.html">Nails</a></li>
+              <li><a class="dropdown-item text-light" href="Waxing.html">Waxing</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link text-light" href="Home.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="Booking.html">Book</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- HERO CAROUSEL -->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active ratio py-5" style="--bs-aspect-ratio: 25%;">
+        <img src="wax.avif" class="d-block img-fluid" alt="1">
+      </div>
+      <div class="carousel-item ratio py-5" style="--bs-aspect-ratio: 25%;"">
+        <img src="wax1.webp" class="d-block img-fluid" alt="2">
+      </div>
+    </div>
+  <header class="hero d-flex align-items-center justify-content-center text-center">
+    <div class="container-fluid text-center">
+      <h1 class="display-4">Waxing</h1>
+      <p class="lead mb-4">Enjoy Our Assortment of Waxing Services</p>
+      <div class="container-fluid text-center p-3">
+      <a href="#Facial" class="btn btn-gold btn-lg ">Facial</a>
+      <a href="#Body" class="btn btn-gold btn-lg">Body</a>
+      <a href="#Bikini" class="btn btn-gold btn-lg">Bikini</a>
+      <a href="#Legs" class="btn btn-gold btn-lg">Legs</a>
+      </div>
+    </div>
+  </header>
+</div>
+
+  <!-- Facial -->
+  <section id="Facial" class="py-5">
+    <div class="container d-flex align-items-center">
+      <div class="container">
+        <h3 class="mb-4">Facial Waxing</h3>
+        <img src="facial.jpg" class="img-fluid rounded shadow" id="mani">
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-face-smile-beam fa-3x mb-3 text-gold"></i>
+              <h5 class="card-title">Eyebrow Shaping</h5>
+              <p class="card-text">Precision waxing to sculpt your brows for the perfect arch and clean lines.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col ">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-droplet fa-3x mb-3 text-gold"></i>
+              <h5 class="card-title">Lip Wax</h5>
+              <p class="card-text">Gentle removal of unwanted hair for smooth, defined lips in under 10 minutes.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-regular fa-face-grin-hearts fa-3x mb-3 text-gold"></i>
+              <h5 class="card-title">Chin & Cheek</h5>
+              <p class="card-text">Soft waxing for delicate skin on chin and cheeks—fast and virtually painless.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Body Wax -->
+  <section id="Body" class="py-5 bg-light">
+    <div class="container d-flex align-items-center">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-kiwi-bird fa-3x mb-3 text-gold"></i>
+              <h5 class="card-title">Underarm Wax</h5>
+              <p class="card-text">Quick & thorough underarm wax—leave your skin smooth and hair-free for weeks.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col ">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-hand fa-3x mb-3 text-gold"></i>
+              <h5 class="card-title">Full Arm Wax</h5>
+              <p class="card-text">From wrist to shoulder, eliminate unwanted hair for a polished look.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-wand-magic-sparkles fa-3x mb-3 text-gold"></i>
+              <h5 class="card-title">Back & Chest</h5>
+              <p class="card-text">Smooth away hair on back and chest—ideal for athletes and busy professionals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h3 class=" mb-4">Body Waxing</h3>
+        <img src="body.webp" class="img-fluid rounded shadow" id="mani">
+      </div>
+    </div>
+  </section>
+
+  <!-- Bikini -->
+  <section id="Bikini" class="py-5">
+    <div class="container d-flex align-items-center">
+      <div class="container">
+        <h3 class=" mb-4">Bikini & Brazilian</h3>
+        <img src="bikini.webp" class="img-fluid rounded shadow" id="mani">
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-water-ladder fa-3x mb-3 text-gold"></i>
+              <h5 class="card-title">Basic Bikini</h5>
+              <p class="card-text">Wax just outside the panty line for a neat, comfortable edge.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col ">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-droplet fa-3x mb-3 text-gold"></i>
+              <h5 class="card-title">Brazilian Wax</h5>
+              <p class="card-text">Complete removal front to back—professional, precise, and hygienic.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-cut fa-3x mb-3 text-gold"></i>
+              <h5 class="card-title">Extended Bikini</h5>
+              <p class="card-text">A little more coverage than Basic, a little less than Brazilian—your choice.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Legs -->
+  <section id="Legs" class="py-5 bg-light">
+    <div class="container d-flex align-items-center">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-person-running fa-3x mb-3 text-gold"></i>
+              <h5 class="card-title">Half Leg Wax</h5>
+              <p class="card-text">Smooth from knee to ankle—perfect for skirts and shorts season.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col ">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-person-walking fa-3x mb-3 text-gold"></i>
+              <h5 class="card-title">Full Leg Wax</h5>
+              <p class="card-text">Complete thigh-to-ankle wax for leg-lengthening confidence.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card service-card h-100 text-center">
+            <div class="card-body">
+              <i class="fa-regular fa-face-grin-stars fa-3x mb-3 text-gold"></i>
+              <h5 class="card-title">Thigh Wax</h5>
+              <p class="card-text">Targeted waxing on the upper leg—ideal for short-hems and athletic wear.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h3 class=" mb-4">Leg Waxing</h3>
+        <img src="bodywax.webp" class="img-fluid rounded shadow" id="mani">
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light py-5">
+    <div class="container pe-5">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>Nails Spa</h5>
+          <p class="small">© 2025 Nails Spa. All rights reserved.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Follow Us</h5>
+          <a href="https://instagram.com" class="text-light mx-2">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+          <a href="https://facebook.com" class="text-light mx-2">
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Hours of Operation</h5>
+          <p class="small">
+            <strong>Mon - Fri:</strong> 9:00 A.M. - 7:30 P.M.
+            <br>
+            <strong>Sun:</strong> 10:00 A.M. - 6:00 P.M.
+            <br>
+            Last walk-ins 30 mins before close.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled small">
+            <li><a href="Home.html" class="text-light">Home</a></li>
+            <li><a href="Home.html#about" class="text-light">About</a></li>
+            <li><a href="contact.html" class="text-light">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>Location</h6>
+          <p>12344 NE 35th st,
+            <br>
+            Boca Raton, FL 33045
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h5>Call Us</h5>
+          <p>
+            <a href="tel:+15612345678" class="text-decoration-none text-light">
+              <i class="fa-solid fa-phone me-2"></i>(561) 234-5678
+            </a>
+          </p>
+
+          <h5>Email</h5>
+          <p>
+            <a href="mailto:info@nailsspa.com" class="text-decoration-none text-light">
+              <i class="fa-solid fa-envelope me-2"></i>info@nailsspa.com
+            </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const nav = document.getElementById('mainNav');
+      console.log('mainNav element:', nav);
+
+      function onScroll() {
+        if (window.scrollY > 50) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
+      }
+      onScroll();
+      window.addEventListener('scroll', onScroll);
+    });
+  </script>
+</body>
+</html>
