@@ -1,4 +1,4 @@
-ocument.querySelectorAll(".form-control").forEach(function(elm) {
+document.querySelectorAll(".form-control").forEach(function(elm) {
     elm.addEventListener("change", function(e) {
       // <- add a listener to every input
       const attribute = e.target.getAttribute("for"); // when any input changes, collect the value
@@ -14,7 +14,6 @@ ocument.querySelectorAll(".form-control").forEach(function(elm) {
       render(Object.assign(window.variables, values)); // render again the card with new values
     });
   });
-
 
 
 let variables = {

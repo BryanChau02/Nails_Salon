@@ -1,46 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Nails Spa</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    rel="stylesheet"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet" />
   <link href="style.css" rel="stylesheet" />
-  <link
-  href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css"
-  rel="stylesheet"
-/>
-<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
 </head>
+
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent py-3" id="mainNav">
     <div class="container-fluid p-3">
       <a class="navbar-brand ps-4" href="Home.html">Nails Spa</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navMenu"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto align-items-center gap-3 pe-3">
           <li class="nav-item dropdown">
-            <button class="btn btn-transparent dropdown-toggle text-light border border-0" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-transparent dropdown-toggle text-light border border-0" data-bs-toggle="dropdown"
+              aria-expanded="false">
               Services
             </button>
             <ul class="dropdown-menu dropdown-menu-dark bg-transparent">
@@ -56,56 +44,44 @@
     </div>
   </nav>
 
-<!-- HERO CAROUSEL -->
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <!-- HERO CAROUSEL -->
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active ratio py-5" style="--bs-aspect-ratio: 25%;">
         <img src="schedule.jpg" class="d-block img-fluid" alt="1">
       </div>
       <div class="carousel-item ratio py-5" style="--bs-aspect-ratio: 25%;"">
-        <img src="schedule1.png" class="d-block img-fluid" alt="2">
+        <img src=" schedule1.png" class="d-block img-fluid" alt="2">
       </div>
     </div>
-  <header class="hero d-flex align-items-center justify-content-center text-center">
-    <div class="container-fluid text-center">
-      <h1 class="display-4">Booking</h1>
-      <p class="lead mb-4">Schedule Your Service Here</p>
-      <div class="container-fluid text-center p-3">
-      <a href="#schedule" class="btn btn-gold btn-lg ">Schedule Now</a>
+    <header class="hero d-flex align-items-center justify-content-center text-center">
+      <div class="container-fluid text-center">
+        <h1 class="display-4">Booking</h1>
+        <p class="lead mb-4">Schedule Your Service Here</p>
+        <div class="container-fluid text-center p-3">
+          <a href="#schedule" class="btn btn-gold btn-lg ">Schedule Now</a>
+        </div>
       </div>
-    </div>
-  </header>
-</div>
+    </header>
+  </div>
 
   <section id="schedule" class="py-5">
     <div class="container">
-      <h3 class= mb-4">Pick a Date & Time</h3>
-  
+      <h3 class=mb-4">Pick a Date & Time</h3>
+
       <!-- FullCalendar will render here -->
       <div id="calendar"></div>
-  
+
       <!-- hidden (or visible) form to confirm -->
       <form id="apptForm" class="mt-4">
         <div class="row g-3 align-items-end">
           <div class="col-sm-4">
             <label for="date" class="form-label">Date</label>
-            <input
-              type="date"
-              id="date"
-              class="form-control"
-              name="date"
-              required
-            />
+            <input type="date" id="date" class="form-control" name="date" required />
           </div>
           <div class="col-sm-4">
             <label for="time" class="form-label">Time</label>
-            <input
-              type="time"
-              id="time"
-              class="form-control"
-              name="time"
-              required
-            />
+            <input type="time" id="time" class="form-control" name="time" required />
           </div>
           <div class="col-sm-4">
             <button type="submit" class="btn btn-gold w-100">
@@ -176,10 +152,12 @@
       </div>
     </div>
   </footer>
+  <button id="viewAppointments" class="btn btn-secondary mt-3">View All Appointments</button>
+  <ul id="appointmentList" class="mt-2"></ul>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       const nav = document.getElementById('mainNav');
       console.log('mainNav element:', nav);
 
@@ -195,45 +173,56 @@
     });
   </script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // NAVBAR scroll handler (keep your existing code)
-    const nav = document.getElementById("mainNav");
-    function onScroll() {
-      if (window.scrollY > 50) nav.classList.add("scrolled");
-      else nav.classList.remove("scrolled");
-    }
-    onScroll();
-    window.addEventListener("scroll", onScroll);
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // NAVBAR scroll handler (keep your existing code)
+      const nav = document.getElementById("mainNav");
+      function onScroll() {
+        if (window.scrollY > 50) nav.classList.add("scrolled");
+        else nav.classList.remove("scrolled");
+      }
+      onScroll();
+      window.addEventListener("scroll", onScroll);
 
-    // FullCalendar setup
-    let calendarEl = document.getElementById("calendar");
-    let calendar = new FullCalendar.Calendar(calendarEl, {
-      initialView: "dayGridMonth",
-      height: 650,
-      selectable: true,
-      selectMirror: true,
-      // when a date (or date range) is clicked/dragged
-      select: function (info) {
-        // fill your form inputs
-        document.getElementById("date").value = info.startStr;
-        // optional: default time
-        document.getElementById("time").value = "10:00";
-        // scroll the form into view
-        document.getElementById("apptForm").scrollIntoView({ behavior: "smooth" });
-      },
-    });
-    calendar.render();
+      // FullCalendar setup
+      let calendarEl = document.getElementById("calendar");
+      let calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: "dayGridMonth",
+        height: 650,
+        selectable: true,
+        selectMirror: true,
+        // when a date (or date range) is clicked/dragged
+        select: function (info) {
+          // fill your form inputs
+          document.getElementById("date").value = info.startStr;
+          // optional: default time
+          document.getElementById("time").value = "10:00";
+          // scroll the form into view
+          document.getElementById("apptForm").scrollIntoView({ behavior: "smooth" });
+        },
+      });
+      calendar.render();
 
-    // handle your form submission
-    document.getElementById("apptForm").addEventListener("submit", function (e) {
-      e.preventDefault();
-      const date = this.date.value;
-      const time = this.time.value;
-      alert(`✅ Appointment set for ${date} at ${time}`);
-      // here you could send the data to your backend…
+      // handle your form submission
+      document.getElementById("apptForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const date = this.date.value;
+        const time = this.time.value;
+
+        // here you could send the data to your backend…
+        fetch('http://localhost:3000/appointment', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ date, time })
+        })
+          .then(res => res.json())
+          .then(data => alert(data.message))
+          .catch(err => alert('❌ Failed to book. Check the server.'));
+      });
     });
-  });
-</script>
+  </script>
 </body>
+
 </html>
