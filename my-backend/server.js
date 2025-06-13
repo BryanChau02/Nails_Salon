@@ -5,7 +5,13 @@ const app = express();
 const PORT = 3000;
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: function (origin, callback) {
+    callback(null, origin); // allow any origin dynamically
+  },
+  credentials: true
+}));
+
 app.use(express.json());
 
 // Test route
